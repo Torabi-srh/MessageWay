@@ -1,13 +1,13 @@
 # راه پیام (MessageWay)
 
-یک راهکار جامع پیام‌رسانی برای دات‌نت (.NET)، شامل یک کلاینت قدرتمند برای API راه پیام (MsgWay API).
-
 [![Build](https://github.com/Torabi-srh/MessageWay/actions/workflows/ci.yml/badge.svg)](https://github.com/Torabi-srh/MessageWay/actions/workflows/ci.yml)
 [![NuGet](https://img.shields.io/nuget/v/MessageWay.svg)](https://www.nuget.org/packages/MessageWay)
 
-## مقدمه
+**MessageWay** is a comprehensive messaging solution for .NET, supporting **SMS**, **IVR**, and **Gap** messenger with built-in **OTP** verification.
 
-راه پیام (MessageWay) روشی منعطف و قابل توسعه برای مدیریت پیام‌رسانی در برنامه‌های دات‌نت شما فراهم می‌کند. این کتابخانه شامل یک کلاینت کاملاً تایپ‌شده (Typed Client) برای تعامل با [MsgWay API](https://api.msgway.com) است.
+**Keywords**: messaging, sms, otp, ivr, gap, notification, verification, dotnet, aspnetcore, msgway
+
+## مقدمه
 
 برای اطلاعات بیشتر می‌توانید به وب‌سایت رسمی و گیت‌هاب ما مراجعه کنید:
 - **وب‌سایت:** [https://msgway.com/](https://msgway.com/)
@@ -39,7 +39,7 @@ builder.Services.AddMsgWay(options =>
 });
 ```
 
-رابط `IMsgWayClient` را به سرویس‌های خود تزریق کنید:
+رابط `IMsgWayClient` را به سرویس‌های خود اضافه کنید:
 
 ```csharp
 public class MyService
@@ -70,9 +70,9 @@ public class MyService
 }
 ```
 
-#### نمونه‌سازی دستی
+#### دستی
 
-اگر از تزریق وابستگی (DI) استفاده نمی‌کنید، می‌توانید کلاینت را مستقیماً نمونه‌سازی کنید:
+اگر از تزریق وابستگی (DI) استفاده نمی‌کنید، می‌توانید کلاینت را مستقیماً استفاده کنید:
 
 ```csharp
 var httpClient = new HttpClient();
@@ -93,11 +93,3 @@ var client = new MsgWayClient(httpClient, options);
 - **MessageWay.Core**: انتزاعات اصلی، رابط‌ها و مدل‌ها.
 - **MessageWay**: پیاده‌سازی اصلی و نقطه ورود.
 - **MessageWay.Tests**: تست‌های واحد (Unit Tests).
-
-## مشارکت
-
-از درخواست‌های پول (Pull Requests) استقبال می‌شود. برای تغییرات عمده، لطفاً ابتدا یک issue باز کنید تا در مورد آنچه می‌خواهید تغییر دهید بحث کنیم.
-
-## مجوز
-
-[MIT](LICENSE)

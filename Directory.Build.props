@@ -19,7 +19,7 @@
     <PackageProjectUrl>https://github.com/Torabi-srh/MessageWay</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Torabi-srh/MessageWay</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>messaging;dotnet;library</PackageTags>
+    <PackageTags>messaging;dotnet;library;sms;otp;ivr;gap;notification;verification;msgway;messageway;aspnetcore</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
